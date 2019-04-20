@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.64.128/WeChatSales?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+
+    jpa:
+      show-sql: true
+server:
+  servlet:
+    context-path: /sell
+wechat:
+  mpAppId: wxa15abec5bc93b8c9
+  mpAppSecret: bcd9d000bbff6a60c624857cb03e65c7
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  keyPath: resources/h5.p12
+  notifyUrl: http://liuyingjun.nat300.top/sell/pay/notify
